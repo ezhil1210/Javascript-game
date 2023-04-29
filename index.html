@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title"><h1>Rock Paper Scissors</h1></div>
+    <div class="scoreboard end">
+        <div class="badge" id="user">user</div>
+        <span id="userscore">0</span>:<span id="compscore">0</span>
+        <div class="badge" id="comp">comp</div>
+</div>    
+<div id="main">
+    
+    <div id="pics">
+        <div id="userinfo">
+            <figure><img src="images/urock.png" id="userpic" height="300px" >
+                <figcaption>user <span id="uw"></span></figcaption></figure>
+        </div>
+        
+        <div >
+            <figure><img src="images/crock.png" id="comppic" height="300px" >
+                <figcaption>computer <span id="cw"></span></figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="result"><h2>Click to play</h2></div>
+    <div class="choices" >
+        
+        <div class="choice" id="r">
+            <img src="images/rock.png" alt="Rock" height="100px" style="border: 0;">
+        </div>
+        <div class="choice" id="p">
+            <img src="images/paper.png" alt="Paper" height="100px">
+        </div>
+        <div class="choice" id="s">
+            <img src="images/scissors.png" alt="Scissors" height="100px">
+        </div>
+    </div>
+    <p>        
+        <h3>Make Your Move</h3>
+    </p>
+</div>   
+<div style="text-align: center;">
+<h4 class="end">Moves Left : <span id="moves">10</span> </h4>
+<h2 id="gameover" class="end">Game has ended</h2>
+<h1 id="end" class="end"></h1>
+<button id="btn" class="end">Play again</button>
+</div>
+
+</body>
+<script src="app.js"></script>
+</html>
